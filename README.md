@@ -1,4 +1,4 @@
-# MIT Critical Data Global Research Challenge
+# Global Research Challenge
 ### Official Competition Website
 
 [![Competition](https://img.shields.io/badge/Competition-Open-brightgreen)](https://nsri.org)
