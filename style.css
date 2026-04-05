@@ -547,6 +547,11 @@ address { font-style: normal; }
   z-index: 1;
 }
 
+/* Last step: no line segment below — center node on the card */
+.tl-item-final .tl-marker {
+  justify-content: center;
+}
+
 /* Circular numbered node */
 .tl-node {
   width: 36px; height: 36px; border-radius: 50%;
@@ -626,9 +631,22 @@ address { font-style: normal; }
 }
 
 /* PARTNERS */
+.partners-split {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.partners-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -.02em;
+  text-align: left;
+  margin-bottom: 22px;
+}
 .partners-grid {
   display: flex; flex-wrap: wrap;
-  gap: 14px; justify-content: center; align-items: center;
+  gap: 14px; justify-content: flex-start; align-items: center;
 }
 .partner {
   display: flex; align-items: center; justify-content: center;
@@ -795,6 +813,7 @@ address { font-style: normal; }
   .hero-stat      { padding: 0 16px; }
   .hero-stat-rule { display: none; }
   .prize-row      { gap: 8px; }
+  .partners-split { gap: 36px; }
   .partner        { width: 165px; height: 88px; }
   .footer-grid    { grid-template-columns: 1fr; gap: 28px; }
   .footer-address { grid-column: auto; }
