@@ -103,7 +103,7 @@ June 13         Finals Day
 
 ### Stack
 - **Pure HTML / CSS / JavaScript** - no build tools, no frameworks required
-- **Google Forms** - for team registration & submit
+- **Typeform** - for team registration & submit
 
 ### Design System
 
