@@ -1,0 +1,25 @@
+{
+  "name": "global-research-challenge",
+  "version": "1.0.0",
+  "description": "Global Research Challenge 2026 - A premier international competition uniting student researchers",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx serve .",
+    "preview": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duckyquang/global-resarch-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duckyquang/global-resarch-challenge/issues"
+  },
+  "homepage": "https://github.com/duckyquang/global-resarch-challenge#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
