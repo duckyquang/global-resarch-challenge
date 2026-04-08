@@ -135,13 +135,19 @@
   });
 
 
-  /* Guidelines PDF accordions */
+  /* Guidelines PDF accordions — defer PDF load until after expand animation so the
+     built-in viewer gets a non-zero height (otherwise Chrome often shows a blank page). */
+  let guidelinesPdfTimer = null;
   const guidelineItems = document.querySelectorAll('.guidelines-item');
   guidelineItems.forEach(item => {
     const btn = item.querySelector('.guidelines-btn');
     const iframe = item.querySelector('.guidelines-embed iframe');
     if (!btn) return;
     btn.addEventListener('click', () => {
+      if (guidelinesPdfTimer) {
+        clearTimeout(guidelinesPdfTimer);
+        guidelinesPdfTimer = null;
+      }
       const isOpen = item.classList.contains('open');
       guidelineItems.forEach(i => {
         i.classList.remove('open');
@@ -152,8 +158,14 @@
         item.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
         if (iframe && iframe.dataset.pdfSrc) {
-          const blank = iframe.getAttribute('src') === 'about:blank' || !iframe.getAttribute('src');
-          if (blank) iframe.setAttribute('src', iframe.dataset.pdfSrc);
+          guidelinesPdfTimer = setTimeout(() => {
+            guidelinesPdfTimer = null;
+            if (!item.classList.contains('open')) return;
+            const src = iframe.getAttribute('src');
+            if (src === 'about:blank' || !src) {
+              iframe.setAttribute('src', iframe.dataset.pdfSrc);
+            }
+          }, 450);
         }
       }
     });
