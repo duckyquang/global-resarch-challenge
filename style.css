@@ -713,7 +713,6 @@ address { font-style: normal; }
 /* Guidelines (PDF accordions) */
 .guidelines-list {
   max-width: 900px;
-  margin: 0 auto;
   border-top: 1px solid var(--rule);
 }
 .guidelines-item { border-bottom: 1px solid var(--rule); }
