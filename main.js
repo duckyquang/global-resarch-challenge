@@ -135,6 +135,42 @@
   });
 
 
+  /* Guidelines PDF accordions — defer PDF load until after expand animation */
+  let guidelinesPdfTimer = null;
+  const guidelineItems = document.querySelectorAll('.guidelines-item');
+  guidelineItems.forEach(item => {
+    const btn = item.querySelector('.guidelines-btn');
+    const iframe = item.querySelector('.guidelines-embed iframe');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      if (guidelinesPdfTimer) {
+        clearTimeout(guidelinesPdfTimer);
+        guidelinesPdfTimer = null;
+      }
+      const isOpen = item.classList.contains('open');
+      guidelineItems.forEach(i => {
+        i.classList.remove('open');
+        const b = i.querySelector('.guidelines-btn');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        if (iframe && iframe.dataset.pdfSrc) {
+          guidelinesPdfTimer = setTimeout(() => {
+            guidelinesPdfTimer = null;
+            if (!item.classList.contains('open')) return;
+            const src = iframe.getAttribute('src');
+            if (src === 'about:blank' || !src) {
+              iframe.setAttribute('src', iframe.dataset.pdfSrc);
+            }
+          }, 450);
+        }
+      }
+    });
+  });
+
+
   /* Lazy image fade-in */
   function initLazyImage(img) {
     // Determine if this image should have fade-in
