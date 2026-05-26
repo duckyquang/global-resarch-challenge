@@ -771,7 +771,9 @@ address { font-style: normal; }
 .footer-nav a     { font-size: .78rem; color: rgba(255,255,255,.28); padding: 4px 10px; border-radius: 100px; transition: color var(--t1), background var(--t1); }
 .footer-nav a:hover { color: #fff; background: rgba(255,255,255,.07); }
 
-.footer-address   { font-size: .76rem; color: rgba(255,255,255,.28); line-height: 1.8; }
+.footer-address   { font-size: .76rem; color: rgba(255,255,255,.28); line-height: 1.8; font-style: normal; }
+.footer-address a { color: rgba(255,255,255,.48); transition: color var(--t1); }
+.footer-address a:hover { color: #fff; }
 
 .footer-bottom    { border-top: 1px solid rgba(255,255,255,.07); padding-top: 24px; display: flex; flex-direction: column; gap: 4px; }
 .footer-bottom p  { font-size: .7rem; color: rgba(255,255,255,.18); }
