@@ -648,6 +648,42 @@ address { font-style: normal; }
 .partner img.loaded  { opacity: .72; }
 .partner:hover img   { filter: none; opacity: 1; }
 
+/* JUDGES */
+.judges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.judge-card {
+  padding: 28px 24px;
+  background: var(--bg-white);
+  border: 1px solid var(--rule);
+  border-radius: var(--r3);
+  transition: border-color var(--t2), box-shadow var(--t2);
+}
+.judge-card:hover {
+  border-color: rgba(21,101,192,.2);
+  box-shadow: var(--sh2);
+}
+.judge-name {
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+.judge-affiliation {
+  font-size: .78rem;
+  color: var(--primary);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.judge-desc {
+  font-size: .82rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 /* FAQ */
 .faq-list { max-width: 720px; border-top: 1px solid var(--rule); }
 .faq-item { border-bottom: 1px solid var(--rule); }
@@ -821,6 +857,7 @@ address { font-style: normal; }
   .about-grid    { grid-template-columns: 1fr; gap: 44px; }
   .awards-top    { grid-template-columns: 1fr; }
   .tiers-grid    { grid-template-columns: 1fr; gap: 10px; }
+  .judges-grid   { grid-template-columns: repeat(2, 1fr); }
   .footer-grid   { grid-template-columns: 1fr 1fr; }
   .footer-address { grid-column: 1 / -1; }
   .cta-inner     { flex-direction: column; align-items: flex-start; }
@@ -853,6 +890,7 @@ address { font-style: normal; }
   .category-card:nth-child(n) { border-top: none; }
 
   .about-features { grid-template-columns: 1fr; }
+  .judges-grid    { grid-template-columns: 1fr; }
   .hero-stat      { padding: 0 16px; }
   .hero-stat-rule { display: none; }
   .prize-row      { gap: 8px; }
