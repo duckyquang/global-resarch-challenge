@@ -2,7 +2,7 @@
 ### Official Competition Website
 
 [![Competition](https://img.shields.io/badge/Competition-Open-brightgreen)](https://nsri.org)
-[![Partners](https://img.shields.io/badge/Partners-NSRI_×_Synthica-red)](https://nsri.org)
+[![Partners](https://img.shields.io/badge/Partners-Synthica_×_NSRI-red)](https://nsri.org)
 [![Awards](https://img.shields.io/badge/Student_Awards-$10,000+-gold)](https://nsri.org)
 [![Deadline](https://img.shields.io/badge/Deadline-May_30-blue)](https://nsri.org)
 
@@ -18,10 +18,9 @@ Modeled after elite competitions like iGO, KSEF, iSEF, Regeneron, and YISF, this
 
 | Detail | Info |
 |--------|------|
-| **Organizer** | NSRI (National Student Researchers Institute) × Synthica |
-| **Total Funding** | $13,000+ |
+| **Organizer** | Synthica × NSRI |
 | **Student Awards** | $10,000+ |
-| **Entry Fee** | $30 (registration + 1 submission) |
+| **Entry Fee** | $30 (registration for first submission) |
 | **Additional Submissions** | +$10 each |
 | **Team Size** | Up to 3 members |
 | **Submission Format** | PDF (academic research format) |
@@ -91,13 +90,11 @@ June 13         Finals Day
 
 | Partner | Role |
 |---------|------|
-| MIT | Academic partner |
-| MIT Critical Data | Research framework partner |
-| Stanford University | Academic partner |
-| NSRI | Host organization |
-| Synthica | Co-host and operations partner |
-| Hack Club | Community partner |
-| ColdMatch | Technology partner |
+| Synthica | Host organization |
+| NSRI | Co-host and operations partner |
+| Hack Club | Fiscal Sponsor |
+| ColdMatch | Sponsor |
+| CrackD | Sponsor|
 
 ## Technical Overview
 
@@ -124,9 +121,9 @@ June 13         Finals Day
 
 | Role | Contact |
 |------|---------|
-| Competition Organizer | NSRI (National Student Researchers Institute) |
-| Co-host | Synthica |
-| General Inquiries | info@nsri.org |
+| Competition Organizer | Synthica |
+| Co-host | NSRI |
+| General Inquiries | contact@synthica.org |
 
 ---
 
