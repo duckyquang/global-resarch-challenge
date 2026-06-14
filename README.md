@@ -10,7 +10,7 @@
 
 ## About the Competition
 
--> **Global Research Challenge** is a continental student research competition hosted by the **National Student Researchers Institute (NSRI)** in partnership with **Synthica**. The competition invites students from all academic disciplines worldwide to submit original research papers for review by leading professors and industry experts.
+-> **Global Research Challenge** is a continental student research competition hosted by the **Synthica** in partnership with **NSRI**. The competition invites students from all academic disciplines worldwide to submit original research papers for review by leading professors and industry experts.
 
 Modeled after elite competitions like iGO, KSEF, iSEF, Regeneron, and YISF, this challenge provides students a prestigious platform to present groundbreaking research, earn global recognition, and compete for over **$10,000 in student awards**.
 
