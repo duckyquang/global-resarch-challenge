@@ -100,6 +100,7 @@ June 13         Finals Day
 
 ### Stack
 - **Pure HTML / CSS / JavaScript** - no build tools, no frameworks required
+- **Results page** - `2026-results.html` for the 2026 Winners, Top 40, and Top 100 recognition lists
 - **Google Forms** - for team registration & submit
 
 ### Design System
