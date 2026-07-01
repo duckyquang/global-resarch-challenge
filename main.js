@@ -96,6 +96,56 @@
   if (location.hash) setTimeout(() => scrollTo(location.hash), 300);
 
 
+  /* Grand Award countdown */
+  const countdown = document.querySelector('.winner-countdown[data-countdown-target]');
+
+  if (countdown) {
+    const target = new Date(countdown.dataset.countdownTarget).getTime();
+    const status = countdown.querySelector('[data-countdown-status]');
+    const daysEl = countdown.querySelector('[data-countdown-days]');
+    const hoursEl = countdown.querySelector('[data-countdown-hours]');
+    const minutesEl = countdown.querySelector('[data-countdown-minutes]');
+    const secondsEl = countdown.querySelector('[data-countdown-seconds]');
+    const pad = value => String(value).padStart(2, '0');
+
+    function renderCountdown() {
+      const remaining = Math.max(0, target - Date.now());
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      if (daysEl) daysEl.textContent = pad(days);
+      if (hoursEl) hoursEl.textContent = pad(hours);
+      if (minutesEl) minutesEl.textContent = pad(minutes);
+      if (secondsEl) secondsEl.textContent = pad(seconds);
+
+      if (status) {
+        status.textContent = remaining > 0
+          ? `${days} ${days === 1 ? 'day' : 'days'} left`
+          : 'Announcement window open';
+      }
+
+      countdown.setAttribute(
+        'aria-label',
+        remaining > 0
+          ? `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until the Grand Award winner announcement`
+          : 'Grand Award winner announcement window is open'
+      );
+
+      return remaining > 0;
+    }
+
+    if (Number.isFinite(target)) {
+      renderCountdown();
+      const countdownTimer = window.setInterval(() => {
+        if (!renderCountdown()) window.clearInterval(countdownTimer);
+      }, 1000);
+    }
+  }
+
+
   /* Active nav link tracking */
   const navLinks = document.querySelectorAll('.header-nav a[href^="#"]');
   const sections = document.querySelectorAll('section[id]');
