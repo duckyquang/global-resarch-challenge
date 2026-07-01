@@ -130,4 +130,4 @@ June 13         Finals Day
 
 ## License & Copyright
 
-© 2026 MIT Critical Data Global Research Challenge · NSRI × Synthica · All rights reserved.
+© 2026 Global Research Challenge · NSRI × Synthica · All rights reserved.
