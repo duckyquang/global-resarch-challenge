@@ -331,8 +331,47 @@ address { font-style: normal; }
 .hero-overline {
   font-size: .68rem; font-weight: 600;
   letter-spacing: .18em; text-transform: uppercase;
-  color: rgba(255,255,255,.5); margin-bottom: 28px;
+  color: rgba(255,255,255,.5); margin-bottom: 18px;
   opacity: 0; animation: fadeUp .4s .0s var(--ease-soft) forwards;
+}
+
+.hero-results-announcement {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 680px);
+  margin: 0 auto 30px;
+  padding: 18px 24px;
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: var(--r3);
+  background:
+    linear-gradient(145deg, rgba(21,101,192,.72), rgba(255,255,255,.075)),
+    rgba(255,255,255,.06);
+  color: #fff;
+  box-shadow: 0 20px 70px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.18);
+  opacity: 0;
+  animation: fadeUp .45s .08s var(--ease-soft) forwards;
+  transition: transform var(--t2) var(--ease-soft), border-color var(--t2), box-shadow var(--t2);
+}
+
+.hero-results-announcement:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,.5);
+  box-shadow: 0 28px 90px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+.hero-results-kicker {
+  color: #fff;
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 650;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.hero-results-copy {
+  color: rgba(255,255,255,.78);
+  font-size: .86rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .hero-title {
@@ -357,7 +396,7 @@ address { font-style: normal; }
 
 .hero-actions {
   display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
-  margin-bottom: 64px;
+  margin-bottom: 54px;
   opacity: 0; animation: fadeUp .45s .3s var(--ease-soft) forwards;
 }
 
@@ -454,6 +493,29 @@ address { font-style: normal; }
 .prize-silver .prize-place, .prize-silver .prize-amount { color: #D1D9E1; }
 .prize-bronze .prize-place, .prize-bronze .prize-amount { color: #CD7F32; }
 
+.award-value-note {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--r2);
+  background: rgba(255,255,255,.025);
+}
+
+.award-value-kicker {
+  margin-bottom: 6px;
+  color: rgba(255,255,255,.72);
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.award-value-note p:last-child {
+  color: rgba(255,255,255,.5);
+  font-size: .82rem;
+  line-height: 1.65;
+}
+
 .award-cats { display: flex; flex-direction: column; gap: 6px; }
 .award-cats li {
   font-size: .8rem; color: var(--dark-text);
@@ -494,6 +556,10 @@ address { font-style: normal; }
 .awards-footnote { margin-top: 28px; text-align: center; font-size: .73rem; color: rgba(255,255,255,.2); }
 .awards-footnote a { color: rgba(255,255,255,.68); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
 .awards-footnote a:hover { color: #fff; }
+.awards-footnote-strong {
+  margin-top: 8px;
+  color: rgba(255,255,255,.42);
+}
 
 /* CATEGORIES */
 .categories-grid {
@@ -912,6 +978,7 @@ address { font-style: normal; }
 @media (max-width: 480px) {
   .container      { padding: 0 16px; }
   .hero-content   { padding: 80px 20px 100px; }
+  .hero-results-announcement { padding: 15px 16px; margin-bottom: 24px; }
   .hero-actions   { flex-direction: column; align-items: center; }
   .partner        { width: 148px; height: 80px; padding: 14px 18px; }
   .partner img    { max-height: 50px; max-width: 120px; }

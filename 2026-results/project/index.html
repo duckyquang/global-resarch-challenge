@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Global Research Challenge 2026 project profile."/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <title>Project Profile | Global Research Challenge</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"/>
+  <link rel="apple-touch-icon" href="/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="/results.css"/>
+</head>
+<body class="final-results-page project-profile-page">
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-brand" aria-label="Global Research Challenge - Home">
+      <img src="/favicon.png" alt="" width="32" height="32" loading="eager"/>
+      <div class="header-brand-text">
+        <span class="header-brand-top">Global Research</span>
+        <span class="header-brand-sub">Challenge</span>
+      </div>
+    </a>
+
+    <nav class="header-nav" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#awards">Awards</a></li>
+        <li><a href="/#timeline">Timeline</a></li>
+        <li><a href="/2026-results/" aria-current="page">Results</a></li>
+      </ul>
+    </nav>
+
+    <a href="/2026-results/#winners" class="header-cta">Back to Results</a>
+
+    <button class="nav-toggle" id="navToggle"
+            aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <nav aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="/#about" tabindex="-1">About</a></li>
+      <li><a href="/#awards" tabindex="-1">Awards</a></li>
+      <li><a href="/#timeline" tabindex="-1">Timeline</a></li>
+      <li><a href="/2026-results/" tabindex="-1" aria-current="page">2026 Results</a></li>
+    </ul>
+    <a href="/2026-results/#winners" class="mobile-nav-cta" tabindex="-1">Back to Results &rarr;</a>
+  </nav>
+</div>
+
+<main id="main">
+  <section class="project-profile-hero" aria-labelledby="projectName">
+    <div class="project-profile-bg" aria-hidden="true"></div>
+    <div class="result-container project-profile-hero-inner">
+      <a class="project-back-link" href="/2026-results/#winners">Results</a>
+      <div class="project-profile-grid">
+        <div class="project-profile-main">
+          <p class="project-profile-kicker" id="projectTier">Project Profile</p>
+          <h1 id="projectName">Project Profile</h1>
+          <p class="project-profile-title" id="projectTitle"></p>
+          <div class="project-profile-actions">
+            <a class="btn btn-white" href="#projectAbstract">Read Abstract</a>
+            <a class="btn btn-primary project-video-link" href="#" id="projectVideoLink" target="_blank" rel="noopener noreferrer" hidden>Watch Presentation Video</a>
+          </div>
+        </div>
+        <aside class="project-rank-panel" aria-label="Recognition">
+          <span>Recognition</span>
+          <strong id="projectRank">2026</strong>
+          <p id="projectRecognition">Global Research Challenge</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-profile-body" aria-label="Project details">
+    <div class="result-container project-detail-grid">
+      <article class="project-abstract-block" id="projectAbstract">
+        <p class="result-eyebrow">Project Abstract</p>
+        <p id="projectAbstractText"></p>
+      </article>
+      <aside class="project-video-block" id="projectVideoWrap" aria-label="Project presentation" hidden>
+        <p class="result-eyebrow">Presentation</p>
+        <video id="projectVideo" controls preload="metadata"></video>
+      </aside>
+    </div>
+  </section>
+
+  <section class="project-next-section" aria-label="More profiles">
+    <div class="result-container project-next-inner">
+      <div>
+        <p class="result-eyebrow">2026 Recognition</p>
+        <h2 class="result-heading">Explore More Honorees</h2>
+      </div>
+      <a href="/2026-results/#top10" class="btn btn-primary">View Top 10</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <img src="/favicon.png" alt="" width="36" height="36" loading="lazy" class="lazy-img"/>
+        <div>
+          <p class="footer-brand-name">Global Research Challenge</p>
+          <p class="footer-brand-host">Hosted by Synthica &times; NSRI</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/2026-results/" aria-current="page">2026 Results</a></li>
+        </ul>
+      </nav>
+      <address class="footer-address" aria-label="Contact">
+        <p><a href="mailto:nsriinstitution@gmail.com">nsriinstitution@gmail.com</a></p>
+      </address>
+    </div>
+  </div>
+</footer>
+
+<script src="/results-projects.js"></script>
+<script src="/main.js" defer></script>
+<script src="/project-profile.js" defer></script>
+</body>
+</html>

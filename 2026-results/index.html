@@ -87,7 +87,7 @@
         <div class="hero-fact">
           <svg class="result-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>
           <span>Winners</span>
-          <strong>Coming soon</strong>
+          <strong>Top 3 Announced</strong>
         </div>
         <div class="hero-fact">
           <svg class="result-icon" aria-hidden="true"><use href="#icon-medal"></use></svg>
@@ -107,6 +107,7 @@
 <nav class="result-nav" aria-label="Results page sections">
   <div class="result-container result-nav-inner">
     <a href="#winners"><svg class="result-icon" aria-hidden="true"><use href="#icon-trophy"></use></svg>Winners</a>
+    <a href="#top10"><svg class="result-icon" aria-hidden="true"><use href="#icon-medal"></use></svg>Top 10</a>
     <a href="#top40"><svg class="result-icon" aria-hidden="true"><use href="#icon-medal"></use></svg>Top 40</a>
     <a href="#top100"><svg class="result-icon" aria-hidden="true"><use href="#icon-list"></use></svg>Top 100</a>
   </div>
@@ -118,43 +119,87 @@
       <div>
         <p class="result-eyebrow">Winners</p>
         <h2 class="result-heading" id="winners-heading">Grand Award Winners</h2>
-        <p class="result-section-copy">Final placements will be published after verification is complete.</p>
+        <p class="result-section-copy">Open a winner profile to view a full project page with the title, abstract, recognition, and finalist video when available.</p>
       </div>
     </div>
 
-    <div class="winner-announcement reveal">
-      <svg class="result-icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+    <div class="grand-winners-grid reveal" aria-label="Grand Award winners">
+      <a class="grand-winner-card grand-winner-card-second" href="/2026-results/project/?id=sebastien-kawada">
+        <span class="winner-rank">2nd Place</span>
+        <span class="winner-medal" aria-hidden="true">02</span>
+        <strong>Sebastien Kawada</strong>
+        <span>Residual Drift Dominates Contradiction in Multi-Turn Constraint Reasoning</span>
+        <span class="winner-profile-link">View profile</span>
+      </a>
+      <a class="grand-winner-card grand-winner-card-first" href="/2026-results/project/?id=salma-raies">
+        <span class="winner-rank">1st Place</span>
+        <span class="winner-medal" aria-hidden="true">01</span>
+        <strong>Salma Raies</strong>
+        <span>Noise-Induced Class-Specific Failure in ECG Arrhythmia Classifiers</span>
+        <span class="winner-profile-link">View winning profile</span>
+      </a>
+      <a class="grand-winner-card grand-winner-card-third" href="/2026-results/project/?id=advay-reshwant-raghav">
+        <span class="winner-rank">3rd Place</span>
+        <span class="winner-medal" aria-hidden="true">03</span>
+        <strong>Advay Joshi, Reshwant Borra, Raghav Madhavan</strong>
+        <span>Honest, Leakage-Controlled Prediction of Cryptic Binding Pockets in PCNA Using a Graph Neural Network</span>
+        <span class="winner-profile-link">View profile</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="result-section result-section-top10" id="top10" aria-labelledby="top10-heading">
+  <div class="result-container">
+    <div class="result-section-header reveal">
       <div>
-        <strong>Winner announcement pending</strong>
-        <span>The Grand Award winners will be added here once final review and confirmation are complete.</span>
-        <div class="winner-countdown"
-             data-countdown-target="2026-07-06T14:59:59+09:00"
-             role="timer"
-             aria-label="Countdown to Grand Award winner announcement">
-          <div class="winner-countdown-heading">
-            <span>Grand Award announcement</span>
-            <strong data-countdown-status>4 days left</strong>
-          </div>
-          <div class="winner-countdown-grid" aria-hidden="true">
-            <span class="winner-countdown-unit">
-              <strong data-countdown-days>04</strong>
-              <span>Days</span>
-            </span>
-            <span class="winner-countdown-unit">
-              <strong data-countdown-hours>00</strong>
-              <span>Hours</span>
-            </span>
-            <span class="winner-countdown-unit">
-              <strong data-countdown-minutes>00</strong>
-              <span>Minutes</span>
-            </span>
-            <span class="winner-countdown-unit">
-              <strong data-countdown-seconds>00</strong>
-              <span>Seconds</span>
-            </span>
-          </div>
-        </div>
+        <p class="result-eyebrow">Highest Recognition</p>
+        <h2 class="result-heading" id="top10-heading">Top 10 Projects</h2>
       </div>
+      <p class="result-section-copy">Each honoree has a dedicated profile page with project details and presentation links when available.</p>
+    </div>
+
+    <div class="top10-list reveal" aria-label="Top 10 projects">
+      <a class="top10-item is-winner" href="/2026-results/project/?id=salma-raies">
+        <span class="top10-rank">1</span>
+        <span class="top10-copy"><strong>Salma Raies</strong><span>Noise-Induced Class-Specific Failure in ECG Arrhythmia Classifiers</span></span>
+      </a>
+      <a class="top10-item is-winner" href="/2026-results/project/?id=sebastien-kawada">
+        <span class="top10-rank">2</span>
+        <span class="top10-copy"><strong>Sebastien Kawada</strong><span>Residual Drift Dominates Contradiction in Multi-Turn Constraint Reasoning</span></span>
+      </a>
+      <a class="top10-item is-winner" href="/2026-results/project/?id=advay-reshwant-raghav">
+        <span class="top10-rank">3</span>
+        <span class="top10-copy"><strong>Advay Joshi, Reshwant Borra, Raghav Madhavan</strong><span>Honest, Leakage-Controlled Prediction of Cryptic Binding Pockets in PCNA Using a Graph Neural Network</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=jayden-lin">
+        <span class="top10-rank">4</span>
+        <span class="top10-copy"><strong>Jayden Lin</strong><span>Connectome Hub Vulnerability and the Limits of Network Spread in Parkinson's Disease</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=haruka-nagata">
+        <span class="top10-rank">5</span>
+        <span class="top10-copy"><strong>Haruka Nagata</strong><span>Provider Type and Oral Rehydration Therapy Receipt in Tanzania's Childhood Diarrhea Policy</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=vaibhav-shakya">
+        <span class="top10-rank">6</span>
+        <span class="top10-copy"><strong>Vaibhav Shakya</strong><span>Leray's Coboundary at Altitude</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=stan-daria">
+        <span class="top10-rank">7</span>
+        <span class="top10-copy"><strong>Stan Daria</strong><span>Triton: Eye Above the Sea</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=nubaid-khan">
+        <span class="top10-rank">8</span>
+        <span class="top10-copy"><strong>Nubaid Khan</strong><span>MAKOTO: A Crisis-Conditioned Reinforcement Learning Framework</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=jaden-pedro">
+        <span class="top10-rank">9</span>
+        <span class="top10-copy"><strong>Jaden Pedro</strong><span>Weather-Driven Short-Term Load Forecasting in the New York Metropolitan Area Using Machine Learning</span></span>
+      </a>
+      <a class="top10-item" href="/2026-results/project/?id=kailee-wong">
+        <span class="top10-rank">10</span>
+        <span class="top10-copy"><strong>Kailee Wong</strong><span>Breadfruit as a Fraction-Specific Biotechnology Platform for Pacific Island Sustainability</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -447,7 +492,7 @@
           <li class="recognition-card recognition-card-featured" data-recognition="top-40 top-100">
             <span class="honoree-initials" aria-hidden="true">BZ</span>
             <div class="honoree-copy">
-              <h3>Zohaib Bari, Tripathi, Suyash, Ragunath Keshav</h3>
+              <h3>Bari, Zohaib</h3>
               <div class="recognition-tags" aria-label="Recognition labels"><span class="recognition-tag recognition-tag-40">Top 40</span><span class="recognition-tag recognition-tag-100">Top 100</span></div>
             </div>
           </li>
@@ -744,7 +789,7 @@
           <li class="directory-item is-top-40" data-recognition="top-40 top-100">
             <span class="directory-initials" aria-hidden="true">BZ</span>
             <div class="directory-copy">
-              <h3>Zohaib Bari, Tripathi, Suyash, Ragunath Keshav</h3>
+              <h3>Bari, Zohaib</h3>
               <div class="recognition-tags" aria-label="Recognition labels"><span class="recognition-tag recognition-tag-40">Top 40</span><span class="recognition-tag recognition-tag-100">Top 100</span></div>
             </div>
           </li>
